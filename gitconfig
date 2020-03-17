@@ -11,7 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	editor = code --wait
+	excludesfile = /Users/vinou/.gitignore_global
 
 [alias]
   co = checkout
@@ -37,6 +38,13 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	branches = !legit branches
+	publish = !legit publish
+	unpublish = !legit unpublish
+	sync = !legit sync
+	switch = !legit switch
+	resync = !legit resync
+	undo = !legit undo
 
 [help]
   autocorrect = 1
@@ -49,3 +57,14 @@
 [user]
 	email = kevinberthier@orange.fr
 	name = Kevin Berthier
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

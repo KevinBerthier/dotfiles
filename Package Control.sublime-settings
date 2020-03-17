@@ -1,16 +1,31 @@
 {
-  "installed_packages":
-  [
-    "AdvancedNewFile",
-    "All Autocomplete",
-    "ApplySyntax",
-    "BracketHighlighter",
-    "Emmet",
-    "Git",
-    "GitGutter",
-    "JSX",
-    "Package Control",
-    "SCSS",
-    "ERB Snippets"
-  ]
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"ApplySyntax",
+		"Babel",
+		"BeautifyRuby",
+		"BracketHighlighter",
+		"Dracula Color Scheme",
+		"Emmet",
+		"ERB Snippets",
+		"FileIcons",
+		"Git",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"JSX",
+		"Material Theme",
+		"Package Control",
+		"RuboCop",
+		"SCSS",
+		"SublimeLinter",
+		"SublimeLinter-rubocop",
+		"Terminus",
+		"Vue Syntax Highlight"
+	]
 }
