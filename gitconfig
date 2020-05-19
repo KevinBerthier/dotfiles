@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = code --wait
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
 	excludesfile = /Users/vinou/.gitignore_global
 
 [alias]
@@ -55,7 +55,7 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = berthier.kevin.y@gmail.com
+	email = berthier.y@gmail.com
 	name = Kevin Berthier
 [filter "lfs"]
 	clean = git-lfs clean -- %f
